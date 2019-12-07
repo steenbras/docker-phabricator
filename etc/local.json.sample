@@ -1,0 +1,9 @@
+{
+  "pygments.enabled": true,
+  "storage.mysql-engine.max-size": 8388608,
+  "security.alternate-file-domain": "https://phab.example.com",
+  "phabricator.base-uri": "https://phab.example.com",
+  "mysql.host": "db",
+  "mysql.user": "phab_user",
+  "mysql.pass": "phab_pwd"
+}

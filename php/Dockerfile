@@ -6,6 +6,7 @@ RUN apk add --no-cache \
     ncurses \
     nodejs \
     npm \
+    openssh-client \
     py-pygments \
     py3-setuptools \
     php7-mcrypt \

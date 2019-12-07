@@ -2,6 +2,10 @@ FROM alpine:3.8
 RUN apk add --no-cache mariadb mariadb-client mariadb-server-utils
 ARG UID=1000
 ARG GID=1000
+ARG PHAB_USER
+ARG PHAB_PWD
+ENV PHAB_USER=$PHAB_USER
+ENV PHAB_PWD=$PHAB_PWD
 RUN sed -i "s@^mysql.*@mysql:x:$UID:$GID:mysql:/var/lib/mysql:/sbin/nologin@" /etc/passwd
 RUN sed -i "s@^mysql.*@mysql:x:$GID:mysql@" /etc/group
 RUN install -o mysql -g mysql -d /run/mysqld
