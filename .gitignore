@@ -2,6 +2,5 @@ src/*
 data/mysql/*
 data/repo/*
 etc/local.json
-.env.new
-.env.orig
+.env
 data/mysql/*
