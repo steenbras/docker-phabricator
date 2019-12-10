@@ -1,0 +1,13 @@
+dn: dc=my-domain,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: my-domain.com
+dc: my-domain
+
+dn: cn=admin,dc=my-domain,dc=com
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword: {SSHA}rX8oWGKW6B7mKY+nUJhrv4g1pPH5KtQg
